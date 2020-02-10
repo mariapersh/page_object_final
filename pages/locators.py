@@ -18,6 +18,12 @@ class ProductPageLocators:
     BASKET_ADD_BTN = (By.CLASS_NAME, "btn-add-to-basket")
 
 
-class BasePageLocators():
+class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+
+
+class BasketPageLocators:
+    BUTTON_BASKET = (By.CSS_SELECTOR, ".basket-mini.pull-right.hidden-xs > span > a")
+    BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#content_inner")

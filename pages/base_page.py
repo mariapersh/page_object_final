@@ -5,7 +5,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-from .locators import BasePageLocators
+from .locators import BasePageLocators, BasketPageLocators
 
 
 class BasePage:
@@ -59,3 +59,7 @@ class BasePage:
         except TimeoutException:
             return False
         return True
+
+    def go_to_basket(self):
+        link = self.browser.find_element(*BasketPageLocators.BUTTON_BASKET)
+        link.click()
