@@ -10,4 +10,4 @@ all tests:
 > pytest .
 
 tests for review:
-> pytest -v --tb=line --language=en -m need_review
+> pytest -v --tb=line --language=en -m need_review test_product_page.py
