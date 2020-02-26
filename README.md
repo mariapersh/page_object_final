@@ -2,4 +2,9 @@
  course final assignment https://stepik.org/course/575
 
 Run: 
-> pytest -v --tb=line --language=en test_main_page.py
+
+all tests:
+> pytest .
+
+tests for review:
+> pytest -v --tb=line --language=en -m need_review
