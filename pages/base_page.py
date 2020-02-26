@@ -1,6 +1,6 @@
 import math
 
-from selenium.common.exceptions import NoAlertPresentException, TimeoutException  # в начале файла
+from selenium.common.exceptions import NoAlertPresentException, TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
